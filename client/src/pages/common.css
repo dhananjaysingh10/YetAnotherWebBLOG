@@ -1,0 +1,185 @@
+/* Basic reset for markdown elements */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Light theme background */
+    color: #333333; /* Light theme text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212; /* Dark theme background */
+    color: #e0e0e0 !important;/* Dark theme text color */
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+    color: #ffffff !important; 
+    /* Explicitly set to white with high specificity */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    transition: color 0.3s;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333; /* Light theme */
+}
+
+body.dark-theme h1 {
+    color: #ffffff; /* Dark theme */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #444; /* Light theme */
+}
+
+body.dark-theme h2 {
+    color: #dddddd; /* Dark theme */
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555; /* Light theme */
+}
+
+body.dark-theme h3 {
+    color: #bbbbbb; /* Dark theme */
+}
+
+h4, h5, h6 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #666; /* Light theme */
+}
+
+body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+    color: #aaaaaa; /* Dark theme */
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #444; /* Light theme */
+    line-height: 1.8;
+}
+
+body.dark-theme p {
+    color: #cccccc; /* Dark theme */
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+    color: #0077cc; /* Light theme */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+body.dark-theme a {
+    color: #1e90ff; /* Dark theme */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code blocks */
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+pre {
+    background-color: #f4f4f4; /* Light theme */
+    color: #333; /* Light theme */
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+body.dark-theme pre {
+    background-color: #1e1e1e; /* Dark theme */
+    color: #e0e0e0; /* Dark theme */
+}
+
+code {
+    background-color: #f0f0f0; /* Light theme */
+    color: #333; /* Light theme */
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+body.dark-theme code {
+    background-color: #1a1a1a; /* Dark theme */
+    color: #e0e0e0; /* Dark theme */
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #ccc; /* Light theme */
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #555; /* Light theme */
+    transition: border-color 0.3s, color 0.3s;
+}
+
+body.dark-theme blockquote {
+    border-left: 4px solid #444; /* Dark theme */
+    color: #bbbbbb; /* Dark theme */
+}
+
+/* Strong and Emphasis */
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc; /* Light theme */
+    margin: 1rem 0;
+    transition: border-color 0.3s;
+}
+
+body.dark-theme hr {
+    border-top: 1px solid #444; /* Dark theme */
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
